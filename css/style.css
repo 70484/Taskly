@@ -27,3 +27,17 @@ button:hover { background: #2980b9; }
 
 /* Licznik */
 #taskCount { background: #3498db; color: white; padding: 2px 8px; border-radius: 50%; font-size: 0.8em; margin-left: 10px; }
+
+/* Animacje */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 10px; }
+    nav ul { padding: 0; }
+    .grid-container { grid-template-columns: 1fr; }
+    .input-group { flex-direction: column; }
+}
